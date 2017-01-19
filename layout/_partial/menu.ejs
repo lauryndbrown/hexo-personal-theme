@@ -1,0 +1,15 @@
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            <ul>
+            <% for (var menu_item in theme.menu) { %>
+                <li>
+                    <a href="<%= url_for(theme.menu[menu_item]) %>">
+                    <%= menu_item %>
+                    </a>
+                </li>
+            <% } %>
+            </ul>
+        </nav>
+    </div>
+</div>
