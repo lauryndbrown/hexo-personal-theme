@@ -12,8 +12,8 @@ h3{
     font-size:3em;
 }
 h4{
-  //  font-weight:200;
-  //  font-size:1.5em;
+  font-weight:900;
+  font-size:2em;
 }
 p.lead{
     font-weight:300;
@@ -140,7 +140,7 @@ hr{
  * Secions
 -------------------------------------------------- */
 .section{
-    padding-top:12em;
+    padding-top:8em;
 }
 .section:nth-child(1){
     background-color:#2A3141;
@@ -179,7 +179,6 @@ hr{
     z-index:3;
 }
 .feature-box{
-  //  border-radius:50%;
     background-color:#3F4E85;
     padding:3em;
     max-height: 30em;
@@ -210,6 +209,22 @@ a:hover, a:active {
 }
 .section .social-icon i {
     font-size:1.5em;
+}
+/* --------------------------------------------------
+ * Footer
+-------------------------------------------------- */
+.blog-sidebar{
+    background-color:#3F4E85;
+    color:#fff;
+    z-index: 9;
+}
+.section.blog-header{
+    background-color:#4C5C96;
+    color:#fff;
+}
+.blog-main{
+  margin-bottom: 3em;
+  margin-top: 3em;
 }
 /* --------------------------------------------------
  * Footer

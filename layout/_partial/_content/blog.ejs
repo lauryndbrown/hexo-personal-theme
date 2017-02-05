@@ -1,21 +1,14 @@
-    <div class="row about section skew-after-right">
-        <div class="col">
-            <h3>Blog</h3>
-            <hr />
-            <h4>Thoughts and Musings of an Oklahoman Software Engineer</h4>
-        </div>
-    </div>
-<div class="row section">
+<div class="row section blog-header section skew-after-right">
 <!-- Blog Header: title and subtitle -->
 <%- partial('_partial/_content/blog-header') %>
+</div>
 <div class="row">
     <!-- Main Content -->
     <div class="col-sm-8 blog-main">
         <%- body %>
     </div>
     <!-- Sidebar -->
-    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar skew-before-left skew-after-right">
         <%- partial('_partial/_content/sidebar') %>
     </div>
- </div>
  </div>
