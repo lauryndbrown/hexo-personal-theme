@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <!-- Head tag -->
-<%- partial('_partial/head') %>
+<%- partial('_partial/_layout/head') %>
 <body>
     <!-- Navigation -->
-    <%- partial('_partial/menu') %>
+    <%- partial('_partial/_layout/menu') %>
 
-    <div class="container">
+    <div class="container-fluid content">
         <% if (page.path.indexOf('archives') > -1) { %>
-            <%- partial('_partial/archives') %> 
+            <%- partial('_partial/_content/archives') %> 
         <% } else if (page.path.indexOf('blog') > -1) { %>
-            <%- partial('_partial/blog') %> 
+            <%- partial('_partial/_content/blog') %> 
+        <% } else if (page.path.indexOf('about') > -1) { %>
+            <%- partial('_partial/_content/about') %> 
         <% } else { %>
-            <%- partial('_partial/home') %>
+            <%- partial('_partial/_content/home') %>
         <% } %> 
     </div>
     <!-- Footer -->
-    <%- partial('_partial/footer') %>
+    <%- partial('_partial/_layout/footer') %>
     <!-- Required JavaScript -->
-    <%- partial('_partial/after-footer') %>
+    <%- partial('_partial/_layout/after-footer') %>
 </body>
 </html>

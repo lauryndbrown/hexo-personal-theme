@@ -1,0 +1,10 @@
+ <div class="row projects_grid text-center">
+    <% theme.interests.forEach(function(interest) {  %>
+        <div class="col">
+            <div class="project_description">
+                <h5><%= interest.name %></h5>
+                <h7><%= interest.level %></h7>
+            </div>
+        </div>
+    <% }); %>
+</div>

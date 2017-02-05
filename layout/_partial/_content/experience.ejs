@@ -1,0 +1,11 @@
+ <div class="row projects_grid text-center">
+    <% theme.experience.forEach(function(job) {  %>
+        <div class="col">
+            <img src="<%= job.image_path %>" alt="Placeholder" class="img-thumbnail">
+            <div class="project_description">
+                <h5><%= job.name %></h5>
+                <h7><%= job.job_title %></h7>
+            </div>
+        </div>
+    <% }); %>
+</div>

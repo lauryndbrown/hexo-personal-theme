@@ -1,0 +1,11 @@
+ <div class="row projects_grid text-center">
+    <% theme.leadership.forEach(function(position) {  %>
+        <div class="col">
+            <img src="<%= position.image_path %>" alt="Placeholder" class="img-thumbnail">
+            <div class="project_description">
+                <h5><%= position.organization %></h5>
+                <h7><%= position.job_title %></h7>
+            </div>
+        </div>
+    <% }); %>
+</div>

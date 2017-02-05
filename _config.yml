@@ -1,5 +1,142 @@
 # Header
 menu:
     Home: /
+    About: /about
     Blog: /blog
     Archives: /archives
+#Projects for Home Screen
+featured_projects:
+-   
+        title: Linear Algebra
+        subtitle: Small Linear Algebra Library based on Exercises from Udacity's Linear Algebra Refresher Course
+        image_path: placeholder.png
+-  
+        title: ASCII Civ
+        subtitle:  Small Python ASCII based Civ-like Game
+        image_path: placeholder.png
+-  
+        title: Python Exercism
+        subtitle:  Python exercises from exercism.io
+        image_path: placeholder.png
+-  
+        title: Python Exercism
+        subtitle:  Python exercises from exercism.io
+        image_path: placeholder.png
+#Companies for About Page
+experience:
+-
+    name: MasterCard
+    job_title:  Software Engineering Intern
+    department: Quality Assurance Dept
+    date: Summer 2014
+    location: St. Louis, MO
+    bullet_1: Created customer-facing website in team setting utilizing Java and Google Web Toolkit.
+    bullet_2: Designed database architecture & connected backend database to frontend interface.
+    image_path:  placeholder.png
+-
+    name: Boeing
+    job_title: Program Manager Intern
+    department: IT Software Security Systems
+    date: Summer  2013
+    location: St. Louis, MO
+    bullet_1: Tracked 12 applications and assisted with user stories, documentation, and training.
+    bullet_2: Researched integrating automated testing solutions for enterprise security provisioning system.
+    image_path:  placeholder.png
+-
+    name: Boeing
+    job_title: Software Architect Intern 
+    department: IT Demand Management
+    date: Summer  2012
+    location: Long Beach, CA
+    bullet_1: Developed research prototype to forecast managers’ target consumption and integrated into existing architecture of enterprise IT demand management system. 
+    bullet_2: Collaborated on 5 projects with leaders in project management, functional analysis, system analysis, database architecture, and web development.
+    image_path:  placeholder.png
+-
+    name: Carnegie Mellon University
+    job_title: Student Research Scholar 
+    department: Language Technologies Institute
+    date: 2012 -  2013
+    location: Pittsburgh, PA
+    bullet_1: Received Semiconductor Research Corporation Grant to develop computer programs facilitating better communication in virtual team collaboration. 
+    bullet_2: Conducted two field studies of more than 50 participants and presented those findings at the Meeting of the Minds Undergraduate Research Symposium, Spring 2012.
+    image_path:  placeholder.png
+
+#Leadership for About Page
+leadership:
+-
+    job_title:  Project Lead & Technical Project Manager
+    organization: Carnegie Mellon Game Creation Society
+    date: 2015
+    location: Pittsburgh, PA
+    description: Lead interdisciplinary team of 6 Carnegie Mellon students using Unreal Engine 4 and Maya.
+    image_path:  placeholder.png
+-
+    job_title:  TechNights Undergraduate Coordinator
+    organization: Carnegie Mellon Computer Science
+    date: 2010 – 2013
+    location: Pittsburgh, PA
+    description: Organized 12 events per semester collaborating with STEM professionals to present weekly on topics to nearly 30 middle school girls from the Pittsburgh area.
+    image_path:  placeholder.png
+-
+    job_title:  Software Developer & Project Manager
+    organization: TadPoll 
+    date: 2013
+    location: Pittsburgh, PA
+    description: Developed Ruby on Rails website for TadPoll, a Pittsburgh startup, and provided leadership for the agile development team as project manager.
+    image_path:  placeholder.png
+#Skills for About Page
+skills:
+    languages:
+        -
+            name: Java
+            level: 10
+            image_path:  placeholder.png
+        -
+            name: Python
+            level: 10
+            image_path:  placeholder.png
+        -
+            name: Ruby
+            level: 10
+            image_path:  placeholder.png
+        -
+            name: HTML5
+            level: 10
+            image_path:  placeholder.png
+    frameworks:
+        -
+            name: Django
+            level: 10
+            image_path:  placeholder.png
+        -
+            name: Ruby on Rails
+            level: 10
+            image_path:  placeholder.png
+        -
+            name: Bootstrap
+            level: 10
+            image_path:  placeholder.png
+    methodologies:
+        -
+            name: Agile Development
+            level: 10
+        -
+            name: Scrum
+            level: 10
+        -
+            name: Git
+            level: 10
+#Interests for the About Page
+interests:
+    -
+        name: Web Development 
+        level: 10
+    -
+        name: Game Development
+        level: 10
+    -
+        name: Artificial Intelligence
+        level: 3
+    -
+        name: Violin
+        level: 1

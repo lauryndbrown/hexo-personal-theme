@@ -1,0 +1,30 @@
+ <div class="row projects_grid text-center">
+    <% theme.skills.languages.forEach(function(language) {  %>
+        <div class="col">
+            <div class="project_description">
+                <h5><%= language.name %></h5>
+                <h7><%= language.level %></h7>
+            </div>
+        </div>
+    <% }); %>
+</div>
+ <div class="row projects_grid text-center">
+    <% theme.skills.frameworks.forEach(function(framework) {  %>
+        <div class="col">
+            <div class="project_description">
+                <h5><%= framework.name %></h5>
+                <h7><%= framework.level %></h7>
+            </div>
+        </div>
+    <% }); %>
+</div>
+ <div class="row projects_grid text-center">
+    <% theme.skills.methodologies.forEach(function(methodology) {  %>
+        <div class="col">
+            <div class="project_description">
+                <h5><%= methodology.name %></h5>
+                <h7><%= methodology.level %></h7>
+            </div>
+        </div>
+    <% }); %>
+</div>

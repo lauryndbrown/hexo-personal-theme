@@ -1,0 +1,10 @@
+ <div class="row projects_grid">
+    <% for (var index in site.posts) { %>
+        <% if (index<3) {  %>
+            <div class="col">
+                <p class="text-center"><%= site.posts[index].title %></p>
+                <p class="text-center"><%= site.posts[index].subtitle %></p>
+            </div>
+        <% } %>
+    <% } %>
+</div>
