@@ -7,12 +7,8 @@
     <%- partial('_partial/_layout/menu') %>
 
     <div class="container-fluid content">
-        <% if (page.path.indexOf('archives') > -1) { %>
-            <%- partial('_partial/_content/archives') %> 
-        <% } else if (page.path.indexOf('blog') > -1) { %>
+        <%  if (page.path.indexOf('blog') > -1) { %>
             <%- partial('_partial/_content/blog') %> 
-        <% } else if (page.path.indexOf('about') > -1) { %>
-            <%- partial('_partial/_content/about') %> 
         <% } else { %>
             <%- partial('_partial/_content/home') %>
         <% } %> 

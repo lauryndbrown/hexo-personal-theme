@@ -1,15 +1,19 @@
 html, body {
     font-family: 'Raleway', sans-serif;
     color:#3D3C3A;
-    background-color:#fff;//#3F4E85;
+    background-color:#fff;
+}
+h1{
+    font-weight:900;
+    font-size: 3.5em;
 }
 h3{
     font-weight:900;
     font-size:3em;
 }
 h4{
-    font-weight:200;
-    font-size:1.5em;
+  //  font-weight:200;
+  //  font-size:1.5em;
 }
 p.lead{
     font-weight:300;
@@ -21,52 +25,9 @@ p.lead{
 .margin-after{
     margin-bottom:1em;
 }
-.about-text img{
-    width: 100px;
-    height: 100px;
-}
-.about_img{
-    border-radius:50%;
-}
-
-.about-text .social-icon {
-    font-size:1.5em;
-}
-.about-text .social-icon i {
-    font-size:1.5em;
-}
-.about-text .social-icon:first-of-type {
-    float:left;
-}
-.about-text .social-icon:last-of-type {
-    float:right;
-}
-.projects_grid .project_description{
-    margin:2em;
-    margin-top:0.5em;
-}
-.projects_grid .project_description h5{
-    font-weight:900;
-}
-.projects_grid .card{
-   border-top:solid 5px #FF9D60; 
-   border-bottom:solid 5px #FF9D60; 
-   width:15em;
-   height:15em;
-   margin: 0 auto;
-   float: none;
-   margin-bottom: 10px;
-}
-.projects_grid .card h4{
-    color:#000;
-    font-weight:900;
-}
-.projects_grid{
-   background-color:#353849;
-}
-.section{
-    padding-top:12em;
-}
+/* --------------------------------------------------
+ * Skew
+-------------------------------------------------- */
 .skew-nav, .skew-after-left, .skew-before-left, .skew-after-right {
   position: relative;
   z-index: 1;
@@ -110,6 +71,22 @@ p.lead{
   transform-origin: 0 100%;
   z-index: -1;
 }
+.skew-nav:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+/* --------------------------------------------------
+ * Navbar Footer
+-------------------------------------------------- */
 .navbar {
   background:rgba(255,255,255,0);
 }
@@ -124,27 +101,14 @@ p.lead{
 .navbar-nav li:first-of-type{
     margin-top:1em;
 }
-.skew-nav:after {
-  background: inherit;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  transform: skewY(-1.5deg);
-  transform-origin: 100%;
-  z-index: -1;
-}
 footer{
     font-weight:600;
-    background-color: #fff;//#2e3141;
-    color:#000;//#F4F6F6;
+    background-color: #fff;
+    color:#000;
     z-index: 10;
 }
 nav a, nav a:link, nav a:visited, nav a:hover, nav a:active{
-    color:#fff;//#F4F6F6;
+    color:#fff;
 }
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active{
     color:#000;
@@ -154,20 +118,29 @@ footer a:hover, footer a:active, nav a:hover, nav a:active{
     text-decoration:None;
 }
 .navbar-brand{
-    color:#000;//#F4F6F6;
+    color:#000;
 }
 span.navbar-toggler-icon i{
-    color:#fff;//#F4F6F6;
+    color:#fff;
     font-size:30px;
 }
 button.navbar-toggler{
     background:rgba(0,0,0,0.5);
 }
+/* --------------------------------------------------
+ * Components
+-------------------------------------------------- */
 .content{
- //   padding-top: 3em;
     padding-bottom: 5em;
- //   padding-left:0;
- //   padding-right:0;
+}
+hr{
+    border:solid .2em rgba(255,255,255, 1);
+}
+/* --------------------------------------------------
+ * Secions
+-------------------------------------------------- */
+.section{
+    padding-top:12em;
 }
 .section:nth-child(1){
     background-color:#2A3141;
@@ -175,39 +148,13 @@ button.navbar-toggler{
     z-index:9;
     padding-top:5em;
 }
-hr{
-    border:solid 1px rgba(255,255,255, .5);
-}
-
 .home .section:nth-child(2){
-    background-color:#4C5C96;
+    background-color:#3F4E85;
     color:#fff;
     z-index:8;
-}
-.about-section {
-    padding-top:10em;
-    background-color:#fff;
-    //color:#fff;
-    z-index:8;
-}
-.about-section-details {
-    padding-top:10em;
-    background-color:#4C5C96;
-    color:#fff;
-    z-index:7;
-}
-.about-section-details ul{
-    list-style-type:none;
-    padding:0;
-    margin:0;
-}
-.about-section-details li{
-    margin-bottom:1em;
-    font-weight:600;
-    font-size:1.5em;
 }
 .section:nth-child(3){
-    background-color:#3F4E85;
+    background-color:#4C5C96;
     color:#fff;
     z-index:7;
 }
@@ -231,11 +178,38 @@ hr{
     color:#fff;
     z-index:3;
 }
-.circle{
-    width:100px;
-    height:100px;
+.feature-box{
+  //  border-radius:50%;
+    background-color:#3F4E85;
+    padding:3em;
+    max-height: 30em;
+    max-width:30em;
+}
+/* --------------------------------------------------
+ * About Section
+-------------------------------------------------- */
+.about_img{
     border-radius:50%;
-    background-color:#fff;
+}
+.about-text img{
+    width: 100px;
+    height: 100px;
+}
+.about-text a{
+    color:#fff;
+}
+a, a:link, a:visited {
+    color:#fff;
+}
+a:hover, a:active {
+    color:#2A3141;
+    text-decoration:None;
+}
+.section .social-icon {
+    font-size:1.5em;
+}
+.section .social-icon i {
+    font-size:1.5em;
 }
 /* --------------------------------------------------
  * Footer
