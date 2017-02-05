@@ -3,20 +3,16 @@ menu:
     Home: /
     About: /about
     Blog: /blog
-    Archives: /archives
+    #Archives: /archives
 #Projects for Home Screen
 featured_projects:
 -   
         title: Linear Algebra
-        subtitle: Small Linear Algebra Library based on Exercises from Udacity's Linear Algebra Refresher Course
+        subtitle: Small Linear Algebra Library
         image_path: placeholder.png
 -  
         title: ASCII Civ
-        subtitle:  Small Python ASCII based Civ-like Game
-        image_path: placeholder.png
--  
-        title: Python Exercism
-        subtitle:  Python exercises from exercism.io
+        subtitle: Python ASCII Art Civilization Game
         image_path: placeholder.png
 -  
         title: Python Exercism
